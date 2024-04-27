@@ -89,7 +89,7 @@ describe("Circular Array Rotation Function Test", () => {
         var totalTest = 10
         var aS = new Array(totalTest).fill(0).map((_, i) => new Array(10**5).fill(0).map(_ => 1 + Math.floor(Math.random() * 10**5)))
         var kS = new Array(totalTest).fill(0).map(_ => 1 + Math.floor(Math.random() * 10**5))
-        var qS = new Array(totalTest).fill(0).map(_ => 1 + Math.floor(Math.random() * 50))
+        var qS = new Array(totalTest).fill(0).map(_ => 1 + Math.floor(Math.random() * 500))
         var queryS = new Array(totalTest).fill(0).map((_, i) => new Array(qS[i]).fill(0).map(_ => Math.floor(Math.random() * 10**5)))
         for (let i=0; i<totalTest; i++){
             it(`F${(12+i).toString().padStart(3, "0")} - Perfomance test number ${1+i}`, async () => {
