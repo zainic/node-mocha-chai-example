@@ -1,0 +1,17 @@
+{
+  "name": "mocha-chai-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "circularArrayRotation.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha **/*.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0"
+  }
+}
