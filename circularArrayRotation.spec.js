@@ -92,7 +92,7 @@ describe("Circular Array Rotation Function Test", () => {
         var qS = new Array(totalTest).fill(0).map(_ => 1 + Math.floor(Math.random() * 50))
         var queryS = new Array(totalTest).fill(0).map((_, i) => new Array(qS[i]).fill(0).map(_ => Math.floor(Math.random() * 10**5)))
         for (let i=0; i<totalTest; i++){
-            it(`F${(9+i).toString().padStart(3, "0")} - Perfomance test number ${1+i}`, async () => {
+            it(`F${(12+i).toString().padStart(3, "0")} - Perfomance test number ${1+i}`, async () => {
                 var actualResult = await circularArrayRotation([...aS[i]], kS[i], queryS[i])
                 var expectedResult = await testCircularArrayRotation([...aS[i]], kS[i], queryS[i])
                 expect(actualResult).to.deep.equal(expectedResult)
